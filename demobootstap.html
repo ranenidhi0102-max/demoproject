@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<style>
+  .parent{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .carousel-item{
+    object-fit: cover;
+  }
+  .carousel-item h1{
+    font-size: larger;
+    color: rgb(115, 55, 55);
+  }
+  .heading{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(235, 229, 45);
+  }
+  .box{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(219, 248, 32);
+  }
+  .mb-3{
+    color: rgb(240, 212, 5);
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning p-3">
+  <div class="container-fluid">
+   <img src="bakery logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      
+    <a class="navbar-brand" href="#">Sweet Bliss</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="slide bakery img.avif" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="background image.webp" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+       <h1>"Every bite is a moment of bliss"</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="slide background img.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Bite of Bliss</h1>
+     </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="parent">
+<div class="card demo" style="width: 20rem;">
+  <img src="cake.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Chocolate cake</h5>
+    <p class="card-text">Sweet delicious chocolate cake.</p>
+    <a href="#" class="btn btn-warning">ORDER NOW</a>
+  </div>
+</div>
+<div class="card demo" style="width: 20rem;">
+  <img src="cheesecake.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Biscoff Cheesecake</h5>
+    <p class="card-text">Creamy sweet biscoff chessecake.</p>
+    <a href="#" class="btn btn-warning">ORDER NOW</a>
+  </div>
+</div>
+<div class="card demo" style="width: 14rem;">
+  <img src="pastry.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pastry</h5>
+    <p class="card-text">Bite of small cake.</p>
+    <a href="#" class="btn btn-warning">ORDER NOW</a>
+  </div>
+</div>
+<div class="card demo" style="width: 20rem;">
+  <img src="red velvet img.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Red Velvet Cake</h5>
+    <p class="card-text">Red velvet filled with lots of happiness.</p>
+    <a href="#" class="btn btn-warning">ORDER NOW</a>
+</div>
+</div>
+<div class="card demo" style="width: 20rem;">
+  <img src="pineapple cake img.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Pineapple Cake</h5>
+    <p class="card-text">pineapple with lots of toppings.</p>
+    <a href="#" class="btn btn-warning">ORDER NOW</a>
+  </div>
+</div>
+</div>
+<br><br>
+<div class="heading">
+<h1>PRICES!</h1>
+</div><br>
+<table class="table">
+  <thead>
+    <tr class="table-light">
+      <th scope="col">No.</th>
+      <th scope="col">Cake Name </th>
+      <th scope="col"> Price </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <th scope="row">1</th>
+      <td>Chocolate Cake</td>
+      <td>500/-</td>
+    </tr>
+    <tr class="table-danger">
+      <th scope="row">2</th>
+      <td>Biscoff Cheesecake</td>
+      <td>750/-</td>
+    </tr>
+    <tr class="table-warning">
+      <th scope="row">3</th>
+      <td>Pastry</td>
+      <td>150/-</td>
+    </tr>
+    <tr class="table-info">
+      <th scope="row">4</th>
+      <td>Red Velvet Cake</td>
+      <td>600/-</td>
+    </tr>
+    <tr class="table-secondary">
+      <th scope="row">5</th>
+      <td>Pineapple Cake</td>
+      <td>550/-</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<div class="box">
+<h3>! CONTACT US FOR ORDERS !</h3>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h2>Sweet Delights</h2>
+      <p>Making every celebration sweeter with delicious cakes and deserts.</p>
+  </div>
+  <div class="footer-section">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Cakes</a></li>
+      <li><a href="#">Custom Cakes</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h3>Contact Us</h3>
+    <p>Nashik,Maharashtra</p>
+    <p>+91 8202262451</p>
+    <p>info@sweetbliss.com</p>
+  </div>
+  <div class="footer-section">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="#">Facebook</a><br>
+      <a href="#">Instagram</a><br>
+      <a href="#">Pinterest</a><br>
+    </div>
+  </div>
+  </div>
+</footer>
+
+    
+</body>
+</html>
